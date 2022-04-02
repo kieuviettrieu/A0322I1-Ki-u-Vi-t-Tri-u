@@ -1,0 +1,33 @@
+.div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+.form1{
+    width: 300px;
+    height: 500px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 80px;
+}
+
+.form2{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.l1{
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.i1{
+    width: 200px;
+    height: 18px;
+    right: 5px;
+}
