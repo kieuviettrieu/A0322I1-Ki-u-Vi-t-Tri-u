@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form/don/gian</title>
+</head>
+<body>
+<div>
+    <form>
+        <h1 style="text-align: center; background-color: orangered; color: white; font-weight: bolder">SỞ THÍCH CỦA BẠN</h1>
+        <table>
+            <tr>
+                <td style="text-align: right">Họ và tên</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right">Email</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right">Sở thích</td>
+                <td>
+                    <ul>
+                        <li><input type="checkbox"> Thể thao</li>
+                        <li><input type="checkbox"> Lướt web</li>
+                        <li><input type="checkbox"> Du lịch</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><input type="checkbox"> Âm nhạc</li>
+                        <li><input type="checkbox"> Chơi game</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><input type="checkbox"> Đọc sách</li>
+                        <li><input type="checkbox"> Điện ảnh</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="sb" value="Gửi thông tin">
+                    <input type="reset" name="rs" value="Nhập lại">
+                </td>
+            </tr>
+        </table>
+        <style>
+            td{
+                text-align: left;
+                padding: 5px;
+            }
+
+            ul{
+                list-style-type: none;
+            }
+
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 100vw;
+                height: 100vh;
+                background-color: aquamarine;
+            }
+
+            form{
+                width: 600px;
+                height: 300px;
+                background-color: aliceblue;
+                padding: 5px;
+            }
+        </style>
+    </form>
+</div>
+</body>
+</html>
