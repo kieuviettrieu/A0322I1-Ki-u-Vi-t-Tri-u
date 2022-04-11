@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="div1" onclick="cc()"></div>
+<button type="button" onclick="clickme()">Click me</button>
+<script>
+    function clickme() {
+        console.log("Xin chào");
+    }
+
+    document.getElementById("div1").innerHTML='Xin chào';
+    function cc() {
+        document.getElementById("div1").innerHTML="Ghi đè";
+    }
+</script>
 </body>
 </html>

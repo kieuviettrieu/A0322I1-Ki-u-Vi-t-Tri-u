@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div>
+        <table>
+            <tr>
+                <th>Amount</th>
+                <th>From Currency</th>
+                <th>To Currency</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" name="number" id="number" >
+                </td>
+                <td>
+                    <select id="selec_first">
+                        <option>Viet Nam</option>
+                        <option>My</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="selec_last">
+                        <option>USD</option>
+                        <option>VND</option>
+                        <option>ERO</option>
+                        <option></option>
+                    </select>
+                </td>
+                <td style="text-align: left">
+                    <input type="submit" id="sub" name="submit" value="Convert">
+                </td>
+            </tr>
+            <style>
+                th, td{
+                    width: 200px;
+                    text-align: center;
+                }
+                select{
+                    width: 115px;
+                }
+            </style>
+        </table>
+
+    <p id="view"></p>
+</div>
+</body>
+<script src="sc_bt2.js"></script>
+</html>

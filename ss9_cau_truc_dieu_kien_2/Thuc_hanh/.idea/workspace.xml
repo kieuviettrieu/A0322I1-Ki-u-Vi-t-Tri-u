@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="73f46c9c-9fcb-4e02-a093-97076b8b1dac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../ss7_bien_kieudulieu_toantu/Baitap/BT_bien_dulieu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_bien_kieudulieu_toantu/Baitap/BT_chuyendoi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_bien_kieudulieu_toantu/Baitap/BT_maytinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_bien_kieudulieu_toantu/Baitap/sc_bt1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_bien_kieudulieu_toantu/Baitap/sc_bt2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_bien_kieudulieu_toantu/Baitap/sc_bt3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_bien_kieudulieu_toantu/Thuc_hanh/TH_khaibao_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_bien_kieudulieu_toantu/Thuc_hanh/TH_toantu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_bien_kieudulieu_toantu/Thuc_hanh/sc1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_bien_kieudulieu_toantu/Thuc_hanh/sc2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_cau_truc_dieu_kien_1/Thuc_hanh/TH_if_else.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_cau_truc_dieu_kien_1/Thuc_hanh/TH_nam_nhuan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_cau_truc_dieu_kien_1/Thuc_hanh/TH_switch_case.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_cau_truc_dieu_kien_1/Thuc_hanh/TH_tt_ba_ngoi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_cau_truc_dieu_kien_1/Thuc_hanh/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_cau_truc_dieu_kien_1/Thuc_hanh/test1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6_tongquan_javascrip/Thuc_hanh/Hien_thi.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6_tongquan_javascrip/Thuc_hanh/Hien_thi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6_tongquan_javascrip/Thuc_hanh/nhung_scrip.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6_tongquan_javascrip/Thuc_hanh/nhung_scrip.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6_tongquan_javascrip/Thuc_hanh/sc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6_tongquan_javascrip/Thuc_hanh/sc.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="27djkry5AArwHWnpFADAmTXrcIg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73f46c9c-9fcb-4e02-a093-97076b8b1dac" name="Default Changelist" comment="" />
+      <created>1649657002612</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649657002612</updated>
+      <workItem from="1649657003835" duration="15000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1649657016646">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1649657016646" />
+  </component>
+</project>
