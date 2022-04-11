@@ -1,40 +1,40 @@
-function top() {
+function top_() {
     let mg=document.getElementById("map");
     mg.style.top=parseInt(mg.style.top)-5+'px';
 }
 
-function dow() {
+function dow_() {
     let mg=document.getElementById("map");
     mg.style.top=parseInt(mg.style.top)+5+'px';
 }
 
-function right() {
+function right_() {
     let mg=document.getElementById("map");
-    mg.style.top=parseInt(mg.style.left)+5+'px';
+    mg.style.left=parseInt(mg.style.left)+5+'px';
 }
 
-function left() {
+function left_() {
     let mg=document.getElementById("map");
-    mg.style.top=parseInt(mg.style.left)-5+'px';
+    mg.style.left=parseInt(mg.style.left)-5+'px';
 }
 
 function moveSelection(evt) {
-    switch (evt.key) {
+    switch (evt.keyCode) {
         case 37:
-            left();
+            left_();
             break;
         case 39:
-            right();
+            right_();
             break;
         case 38:
-            top();
+            top_();
             break;
         case 40:
-            dow();
+            dow_();
             break;
     }
 }
 
 function doarr() {
-    window.addEventListener("keydown",moveSelection);
+    window.addEventListener('keydown',moveSelection);
 }
