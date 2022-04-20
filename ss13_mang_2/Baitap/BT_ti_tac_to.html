@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Caro Game Simple</h3>
+<div id="caro"></div>
+<input type="button" id="idv" value="Change Value_X" onclick="change_Value()">
+<script>
+    let board = [];
+    let n=7;
+    for (let i = 0; i < n; i++) {
+        board[i] = new Array('.', '.', '.', '.', '.','.','.');
+    }
+
+    let sout='';
+    sout = "<table width='200' height='200' cellspacing='0' cellpadding='3'>"
+    for (let i = 0; i < n; i++) {
+        sout = sout + "<tr>";
+        for (let j = 0; j < n; j++) {
+            sout = sout + "<td>"+board[i][j]+"</td>";
+        }
+        sout = sout + "</tr>";
+    }
+    sout = sout + "</table>"+"<br/>";
+    document.getElementById("caro").innerHTML=sout;
+
+    // function KT_arr(inarr) {
+    //     for(let i=0; i<inarr.length; i++)
+    //     {
+    //         for (let j=2; j<inarr[i].length; i++)
+    //         {
+    //             if(inarr[i][j-2]===inarr[i][j-1] && inarr[i][j-1]===inarr[i][j] && (inarr[i][j]==='X' || inarr[i][j]==='O'))
+    //             {
+    //                 return true;
+    //             }
+    //         }
+    //     }
+    //
+    //     for(let i=0; i<inarr.length; i++)
+    //     {
+    //         for (let j=2; j<inarr[i].length; i++)
+    //         {
+    //             if(inarr[j-2][i]===inarr[j-1][i] && inarr[j-1][i]===inarr[j][i] && (inarr[j][i]==='X' || inarr[j][i]==='O'))
+    //             {
+    //                 return true;
+    //             }
+    //         }
+    //     }
+    //     return false;
+    //
+    // }
+
+    function change_Value() {
+        let sout1='';
+        let positionX = parseInt(prompt("X: "));
+        let positionY = parseInt(prompt("Y: "));
+        if(document.getElementById("idv").value=="Change Value_X")
+        {
+            board[positionX][positionY]='X';
+            document.getElementById("idv").value="Change Value_O";
+        }
+        else
+        {
+            board[positionX][positionY]='O';
+            document.getElementById("idv").value="Change Value_X"
+        }
+
+        sout1 = "<table width='200' height='200' cellspacing='0' cellpadding='3'>"
+        for (let i = 0; i < n; i++) {
+            sout1 = sout1 + "<tr>";
+            for (let j = 0; j < n; j++) {
+                sout1 = sout1 + "<td>"+board[i][j]+"</td>";
+            }
+            sout1 = sout1 + "</tr>";
+        }
+        sout1 = sout1 + "</table>"+"<br/>";
+        document.getElementById("caro").innerHTML=sout1;
+        // if(KT_arr(board)==true)
+        // {
+        //     alert("End game!");
+        //     document.getElementById("idv").onclick="Change()";
+        // }
+
+        function Change() {
+            for (let i = 0; i < n; i++) {
+                board[i] = new Array('.', '.', '.', '.', '.','.','.');
+            }
+
+            let sout='';
+            sout = "<table width='200' height='200' cellspacing='0' cellpadding='3'>"
+            for (let i = 0; i < n; i++) {
+                sout = sout + "<tr>";
+                for (let j = 0; j < n; j++) {
+                    sout = sout + "<td>"+board[i][j]+"</td>";
+                }
+                sout = sout + "</tr>";
+            }
+            sout = sout + "</table>"+"<br/>";
+            document.getElementById("caro").innerHTML=sout;
+            document.getElementById("idv").onclick="change_Value()";
+        }
+    }
+
+</script>
+</body>
+</html>

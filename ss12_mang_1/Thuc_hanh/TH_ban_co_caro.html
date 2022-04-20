@@ -13,9 +13,9 @@
 
     let sout='';
     sout = "<table width='150' height='150' cellspacing='0' cellpadding='3'>"
-    for (i = 0; i < 5; i++) {
+    for (let i = 0; i < 5; i++) {
         sout = sout + "<tr>";
-        for (j = 0; j < 5; j++) {
+        for (let j = 0; j < 5; j++) {
             sout = sout + "<td>"+board[i][j]+"</td>";
         }
         sout = sout + "</tr>";
@@ -29,9 +29,9 @@
         let positionY = parseInt(prompt("Y: "));
         board[positionX][positionY]='x';
         sout = "<table width='150' height='150' cellspacing='0' cellpadding='3'>"
-        for (i = 0; i < 5; i++) {
+        for (let i = 0; i < 5; i++) {
             sout = sout + "<tr>";
-            for (j = 0; j < 5; j++) {
+            for (let j = 0; j < 5; j++) {
                 sout = sout + "<td>"+board[i][j]+"</td>";
             }
             sout = sout + "</tr>";
