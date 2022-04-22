@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        tr:nth-child(odd)
+        {
+            background-color: beige;
+        }
+        h1{
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Add New Product</h1>
+<div>
+    <input type="text" id="idadd" placeholder="New product" style="width: 250px; height: 25px">
+    <button onclick="on_Add()" style="height: 30px;width: 50px; background-color: forestgreen; color: white">Add</button>
+</div>
+<h1>Display All Product</h1>
+<div id="iddiv"></div>
+<script>
+    let board = ["Iphone", "Nokia", "Samsum", "Sony Xperia", "Oppo A71"];
+    let sout='';
+    sout = "<table width='500' cellspacing='0' cellpadding='3'>";
+    sout = sout + "<tr style='background-color: white'>" + "<th style='text-align: left'>"+"Product Name"+"</th>"+"<th></th>"+"<th></th>" +
+        "<th style='color: crimson'>" +board.length+" products"+"</th>" + "</tr>"+"<br>";
+
+    for (let i=0; i<board.length; i++)
+    {
+        sout+="<tr><td style='text-align: left; font-weight: revert'>"+board[i]+"</td>";
+
+        sout+="<td style='text-align: right'><button style='background-color: forestgreen; color: white' " +
+            "onclick=\"on_edit()\">Edit</button></td>";
+
+        sout+="<td style='text-align: right'><button style='background-color: forestgreen; color: white' " +
+            "onclick=\"on_delete()\">Delete</button></td>";
+
+        sout+="<td>"+"</td></tr>";
+    }
+    sout = sout + "</table>"+"<br/>";
+    document.getElementById("iddiv").innerHTML=sout;
+
+
+    function reload() {
+        let sout = "<table width='500' cellspacing='0' cellpadding='3' style='back'>";
+        sout = sout + "<tr style='background-color: white'>" + "<th style='text-align: left'>"+"Product Name"+"</th>"+"<th></th>"+"<th></th>" +
+            "<th style='color: crimson'>" +board.length+" products"+"</th>" + "</tr>"+"<br>";
+
+        for (let i=0; i<board.length; i++)
+        {
+            sout+="<tr><td style='text-align: left; font-weight: revert'>"+board[i]+"</td>";
+
+            sout+="<td style='text-align: right'><button style='background-color: forestgreen; color: white' " +
+                "onclick=\"on_edit("+i+")\">Edit</button></td>";
+
+            sout+="<td style='text-align: right'><button style='background-color: forestgreen; color: white' " +
+                "onclick=\"on_delete("+i+")\">Delete</button></td>";
+
+            sout+="<td>"+"</td></tr>";
+        }
+
+        sout = sout + "</table>"+"<br/>";
+        document.getElementById("iddiv").innerHTML=sout;
+    }
+
+    function on_Add() {
+        let in_add=document.getElementById("idadd").value;
+        if(in_add!=='')
+        {
+            board.push(in_add);
+            reload();
+        }
+    }
+
+    function on_edit(inde) {
+        inde=parseInt(inde);
+        let edit=prompt("Thay đổi '"+board[inde]+"': ");
+        if(edit!=='')
+        {
+            board.splice(inde,1,edit);
+            reload();
+        }
+    }
+
+    function on_delete(inde) {
+        inde=parseInt(inde);
+        board.splice(inde,1);
+        reload();
+    }
+</script>
+</body>
+</html>
