@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Apple=function () {
+        this.weight=10;
+
+        this.getWeight=function () {
+            return this.weight
+        }
+
+        this.isEmpty=function () {
+            if(this.weight>0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        this.decrease=function () {
+            this.weight--;
+        }
+    };
+
+    let Human=function (name,gender,weight) {
+        this.name=name;
+        this.gender=gender;
+        this.Weight=weight;
+
+        this.setName=function (name) {
+            this.name=name;
+        }
+
+        this.setGender=function (gender) {
+            this.gender=gender;
+        }
+
+        this.setWeigth=function (weight) {
+            this.Weight=weight;
+        }
+
+        this.getName=function () {
+            return this.name;
+        }
+
+        this.getWeight=function () {
+            return this.Weight;
+        }
+
+        this.isMale=function () {
+            return this.gender;
+        }
+
+
+        this.eatApple=function (apple) {
+            this.Apple=apple;
+        }
+
+        this.eat=function () {
+            this.Apple.decrease();
+        }
+
+        this.checkApple=function () {
+            if (this.Apple.weight>0)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        this.say=function () {
+            let str;
+            if (this.checkApple())
+            {
+                str="Còn "+this.Apple.getWeight()+"/10 Apple";
+            }
+            else
+            {
+                str=this.name+" đã ăn hết!";
+            }
+            return str;
+        }
+
+    }
+
+    let Adam=new Human("Adam","felmale",47);
+    let Eva=new Human("Eva","felmale",52);
+
+    let apple=new Apple();
+    Adam.eatApple(apple);
+    Eva.eatApple(apple);
+    while (Adam.checkApple())
+    {
+        document.write("_Adam ăn!"+"<br>")
+        Adam.eat();
+        document.write("_"+Adam.say()+"<br>");
+        document.write("Eva ăn!"+"<br>")
+        Eva.eat();
+        document.write(Eva.say()+"<br>");
+    }
+</script>
+</body>
+</html>
