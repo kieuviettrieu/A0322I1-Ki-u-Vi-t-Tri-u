@@ -1,22 +1,24 @@
 
 let Array_x=[];
 function on_muave() {
-    let chon=parseInt(prompt("Bạn có 2 lựa chọn: 1.Bạn muốn tự chọn số/2.Hệ thống tự random"));
-    let arr=[];
-    if(chon===1)
+    if(Array_x.length<4)
     {
-        for(let i=0; i<6; i++)
+        let chon=parseInt(prompt("Bạn có 2 lựa chọn: 1.Bạn muốn tự chọn số/2.Hệ thống tự random"));
+        let arr=[];
+        if(chon===1)
         {
-            let x=prompt("Nhập số thứ "+(i+1)+"(số có 2 chữ số):");
-            arr.push(x)
+            for(let i=0; i<6; i++)
+            {
+                let x=prompt("Nhập số thứ "+(i+1)+"(số có 2 chữ số):");
+                arr.push(x)
+            }
         }
-    }
-    else
+        else
         if(chon===2)
         {
             for(let i=0; i<6; i++)
             {
-                let x=parseInt(Math.random()*100)-1;
+                let x=Math.abs(parseInt(Math.random()*100)-1);
                 let x1='';
                 if(x<10)
                 {
@@ -29,8 +31,13 @@ function on_muave() {
                 arr.push(x1);
             }
         }
-    Array_x.push(arr);
-    on_();
+        Array_x.push(arr);
+        on_();
+    }
+    else
+    {
+        alert("Bạn chỉ được mua tối đa 4 vé!")
+    }
 }
 
 function on_() {
