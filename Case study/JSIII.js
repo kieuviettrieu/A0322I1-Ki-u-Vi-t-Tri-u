@@ -41,8 +41,21 @@ function Bai_III2() {
             if(B[i]===A[j])
             {
                 kt=false;
+                break;
             }
         }
+        if(kt===true)
+        {
+            for (let k=0; k<C.length; k++)
+            {
+                if(B[i]===C[k])
+                {
+                    kt=false;
+                    break;
+                }
+            }
+        }
+
         if(kt===true)
         {
             C.push(B[i]);
